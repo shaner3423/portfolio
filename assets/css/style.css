@@ -40,18 +40,9 @@ p {
    color: var(--first);
    padding-left: 100px;
    padding-right: 30px;
+   border-radius: 0 15px 15px 0;
 }
 
-.header span {
-    margin-top: auto;
-    width: fit-content;
-    background-color: var(--third);
-    color: var(--first);
-    padding: 20px;
-    margin-left: ;
-    content: "";
-    
-}
 
 .header nav {
     padding-top: 25px;
@@ -72,6 +63,10 @@ p {
     border-bottom: var(--fourth);
 }
 
+li:hover {
+    opacity: 25%;
+}
+
 /*-----START HERO SECTION-----*/
 .hero {
     height: 300px;
@@ -88,7 +83,7 @@ p {
 .content {
     width: 100%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .content article {
@@ -108,14 +103,21 @@ p {
     height: 100%;
     border-right: 10px solid var(--second);
     font-size: 70px;
+    text-align: right;
 }
 
+.work h2 {
+    height: 900px;
+}
 
+/* ------START ABOUT ME SECTION----- */
 .about-me p {
     font-size: 20px;
     margin-left: 275px;
     padding-left: 80px;
     padding-top: 5px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-me img {
@@ -126,9 +128,111 @@ p {
     float: right;
 }
 
+/* -----START WORK SECTION----- */
 
-.flex-container div {
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
     width: 45%;
-    border-radius: 14px;
-    border: 4px solid;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border: 5px solid var(--first);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.flex-container h3, .flex-container h4 {
+    margin-top: 300px;
+    width: 100%;
+    background-color: var(--first);
+    color: var(--fourth);
+    padding: 10px 5px;
+    text-align: left;
+}
+
+.flex-container h4 {
+    font-size: medium;
+    margin-top:auto;
+}
+
+
+
+
+.run-buddy{
+    background-image: url(../images/run-buddy.jpg);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border: 5px solid var(--first);
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 800px;
+    background-size: cover;
+}
+
+.run-buddy:hover{
+    background-color: rgba(white,white,white, 0.5);
+}
+    
+
+
+
+/* ------START CONTACT ME SECTION----- */
+.contact-me h2 {
+    text-align: right;
+    width: min-content;
+    margin-left: 0px;
+    padding-left: 0px;    
+}
+
+.contact-me nav {
+    padding-top: 25px;
+    margin-right: 40px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.contact-me nav ul {
+    list-style-type: none;
+    padding-top: 35px;
+    padding-left: 50px;
+
+}
+
+.contact-me nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 980px) {
+
 }
