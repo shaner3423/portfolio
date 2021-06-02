@@ -117,17 +117,12 @@ li:hover {
     text-align: right;
 }
 
+/* ------START ABOUT ME SECTION----- */
 .about-me h2 {
     height: 300px;
     margin-bottom: 0px;
 }
 
-.work h2 {
-    height: 900px;
-    margin-top: 50px;
-}
-
-/* ------START ABOUT ME SECTION----- */
 .about-me p {
     font-size: 25px;
     margin-left: 275px;
@@ -146,6 +141,10 @@ li:hover {
 }
 
 /* -----START WORK SECTION----- */
+.work h2 {
+    height: 900px;
+    margin-top: 50px;
+}
 
 .flex-container {
   display: flex;
@@ -172,6 +171,7 @@ li:hover {
     margin-top:auto;
 }
 
+/*----- RUN BUDDY SECTION STARTS HERE-----*/
 .run-buddy{
     background-image: url(../images/run-buddy.jpg);
     display: flex;
@@ -186,6 +186,7 @@ li:hover {
     display: inline-block;
     padding-right: 800px;
     background-size: cover;
+    opacity: 60%;
 }
 
 
@@ -200,10 +201,13 @@ li:hover {
     padding-left: 20px;
 }
 
-.run-buddy:hover{
+.run-buddy:hover, .flex-item:hover{
     opacity: 100%;
 }
 
+/*-----still need to figure out how to make background transparent without having the text to be transparent as well*/
+
+/* -----OTHER WORK SECTION STARTS HERE----- */
 .flex-item {
     display: flex;
     flex-direction: column;
@@ -218,7 +222,7 @@ li:hover {
     box-sizing: border-box;
     display: inline-block;
     background-size: cover;
-    /* opacity: 60%; */
+    opacity: 60%;
 }
 
 .flex-item h3 {
@@ -234,8 +238,10 @@ li:hover {
    padding-left: 25px;
 }
 
+
+
 #surf {
-    background-image: url(../images/surf.jpg)
+    background-image: url(../images/surf.jpg);
 }
 
 #led-wall {
@@ -288,10 +294,27 @@ li:hover {
 }
 
 
-
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 575px) {
-
+    body {
+        background-color: var(--second);
+      }
+    
+      .content{
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+    
 }
 
 @media screen and (max-width: 768px) {
