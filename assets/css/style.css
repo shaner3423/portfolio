@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color:#03658C;
+    background-color: #03658C;
 }
 
 a {
@@ -168,7 +168,7 @@ li:hover {
 
 /*----- RUN BUDDY SECTION STARTS HERE-----*/
 .run-buddy{
-    background-image: url(../images/run-buddy.jpg);
+    background-image: url(../images/FindFresh.png);
     display: flex;
     width: 100%;
     height: 465px;
